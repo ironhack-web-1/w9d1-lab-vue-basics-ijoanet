@@ -1,6 +1,7 @@
 <template>
   <div class="app-container">
     <Navbar />
+    <Math />
     <Footer />
   </div>
 </template>
@@ -9,11 +10,14 @@
 import Navbar from './components/NavbarComponent.vue';
 import Footer from './components/FooterComponent.vue';
 
+import Math from './components/MathComponent.vue';
+
 export default {
   name: 'App',
   components: {
     Navbar,
     Footer,
+    Math,
   },
 };
 </script>
