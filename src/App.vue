@@ -2,6 +2,8 @@
   <div class="app-container">
     <Navbar />
     <Math />
+    <Show :msg="showMsg" :show="true" />
+    <Show :msg="hideMsg" :show="false" />
     <Footer />
   </div>
 </template>
@@ -12,12 +14,21 @@ import Footer from './components/FooterComponent.vue';
 
 import Math from './components/MathComponent.vue';
 
+import Show from './components/ShowComponent.vue';
+
 export default {
   name: 'App',
   components: {
     Navbar,
     Footer,
     Math,
+    Show,
+  },
+  data() {
+    return {
+      showMsg: 'This message should be shown!👀',
+      hideMsg: 'This message should not be shown!😢',
+    };
   },
 };
 </script>
