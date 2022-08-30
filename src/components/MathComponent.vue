@@ -1,5 +1,5 @@
 <template>
-  <div class="math-container">
+  <div class="math-wrapper">
     2 + 2 = {{ sum(2, 2) }}
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-.math-container {
-    margin: 300px;
+.math-wrapper {
+    margin: 100px;
 }
 </style>

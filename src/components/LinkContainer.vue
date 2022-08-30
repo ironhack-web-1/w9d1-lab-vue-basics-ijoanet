@@ -50,7 +50,7 @@ export default {
     width: var(--width);
     min-width: var(--min-width);
 }
-.link-wrapper > li {
+ li {
     list-style: none;
 }
 a {
