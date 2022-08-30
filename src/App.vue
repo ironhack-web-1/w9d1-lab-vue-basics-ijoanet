@@ -1,10 +1,12 @@
 <template>
   <div class="app-container">
-    <Navbar />
-    <Math />
-    <Show :msg="showMsg" :show="true" />
-    <Show :msg="hideMsg" :show="false" />
-    <Footer />
+    <Navbar /> <!-- Iteration 1 -->
+    <Math /> <!-- Iteration 2 -->
+    <Show :msg="showMsg" :show="true" /> <!-- Iteration 3 -->
+    <Show :msg="hideMsg" :show="false" /> <!-- Iteration 3 -->
+    <List /> <!-- Iteration 4 -->
+    <Background /> <!-- Iteration 5 -->
+    <Footer /> <!-- Iteration 1 -->
   </div>
 </template>
 
@@ -16,6 +18,10 @@ import Math from './components/MathComponent.vue';
 
 import Show from './components/ShowComponent.vue';
 
+import List from './components/ListComponent.vue';
+
+import Background from './components/BackgroundComponent.vue';
+
 export default {
   name: 'App',
   components: {
@@ -23,6 +29,8 @@ export default {
     Footer,
     Math,
     Show,
+    List,
+    Background,
   },
   data() {
     return {
