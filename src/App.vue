@@ -6,6 +6,7 @@
     <Show :msg="hideMsg" :show="false" /> <!-- Iteration 3 -->
     <List /> <!-- Iteration 4 -->
     <Background /> <!-- Iteration 5 -->
+    <Form /> <!-- Bonus -->
     <Footer /> <!-- Iteration 1 -->
   </div>
 </template>
@@ -22,6 +23,8 @@ import List from './components/ListComponent.vue';
 
 import Background from './components/BackgroundComponent.vue';
 
+import Form from './components/FormComponent.vue';
+
 export default {
   name: 'App',
   components: {
@@ -31,6 +34,7 @@ export default {
     Show,
     List,
     Background,
+    Form,
   },
   data() {
     return {
